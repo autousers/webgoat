@@ -50,8 +50,8 @@ jobs:
         polaris_test_sca_type: 'SCA-SIGNATURE'
 
         ### Uncomment this to use Source Upload method. Default value is hybrid (build based)
-        polaris_test_sast_location: 'remote'
-        polaris_test_sca_location: 'remote'
+        # polaris_test_sast_location: 'remote'
+        # polaris_test_sca_location: 'remote'
         # project_source_archive: ${{ vars.PROJECT_SOURCE_ARCHIVE }}
         # project_source_excludes: ${{ vars.PROJECT_SOURCE_EXCLUDES }} # Accepts Multiple Values
         # project_source_preserveSymLinks: true
@@ -84,8 +84,8 @@ jobs:
         # project_directory: ${{ vars.PROJECT_DIRECTORY }}
 
         ### Uncomment this to use Source Upload method. Default value is hybrid (build based)
-        polaris_test_sast_location: 'remote'
-        polaris_test_sca_location: 'remote'
+        # polaris_test_sast_location: 'remote'
+        # polaris_test_sca_location: 'remote'
         # project_source_archive: ${{ vars.PROJECT_SOURCE_ARCHIVE }}
         # project_source_excludes: ${{ vars.PROJECT_SOURCE_EXCLUDES }} # Accepts Multiple Values
         # project_source_preserveSymLinks: true
