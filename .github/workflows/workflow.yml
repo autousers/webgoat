@@ -16,6 +16,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Make mvnw executable
+      run: chmod +x mvnw
+    - name: Build with Maven Wrapper
+      run: ./mvnw -B package
     - name: Polaris Full Scan
       id: polaris-full-scan
       if: ${{ github.event_name != 'pull_request' }}
