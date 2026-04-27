@@ -61,7 +61,7 @@ jobs:
         # mark_build_status: 'success'
 
         ### Signature scan
-        polaris_test_sca_type: 'SCA-SIGNATURE'
+        # polaris_test_sca_type: 'SCA-SIGNATURE'
 
         ### Uncomment this to use Source Upload method. Default value is hybrid (build based)
         # polaris_test_sast_location: 'remote'
@@ -94,7 +94,7 @@ jobs:
         polaris_access_token: ${{ secrets.POLARIS_ACCESS_TOKEN }}
         polaris_application_name: "APAC-ASEAN-nForce-1"
         polaris_project_name: ${{ github.event.repository.name }}
-        polaris_assessment_types: "SCA,SAST"
+        polaris_assessment_types: "SAST"
         # project_directory: ${{ vars.PROJECT_DIRECTORY }}
 
         ### Uncomment this to use Source Upload method. Default value is hybrid (build based)
